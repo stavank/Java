@@ -1,4 +1,4 @@
-// Least recently used scheduling policy
+// Least recently used scheduling policy Using 2 Stacks - poor solution
 // @uthor Stavan Karia
 // 11/11/2015
 
