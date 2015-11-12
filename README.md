@@ -9,5 +9,5 @@ Practicing Algorithms.
 <li> <b>SJFTester</b>.java                     : Find the schedule using the Shortest Job First scheduling policy.</li>
 <li> <b>RRTester</b>.java                 : Find the schedule using round robin policy.</li>
 <li> <b>RecursiveReverseTester</b>.java   : Reveerse a singly linked list using recursion.</li>
-<li> <b>VaidateBST</b>.java               : Function to validate if a tree is a BST</li>
+<li> <b>ValidateBST</b>.java               : Function to validate if a tree is a BST</li>
 </ol>
