@@ -4,7 +4,7 @@
 
 import java.util.*;
 
-public class Tester{
+public class SJFTester{
   public static void main(String[] args){
     ArrayList<Task> tasks = new ArrayList<Task>();
     // add tasks
