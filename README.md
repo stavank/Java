@@ -6,4 +6,5 @@ Practicing Algorithms.
 <li> <b>BotNumOfWays</b>.java            : Find the num of ways a bot can go from point a to point b if there are n steps between the and the bot can take 1, 2, 3 steps only</li>
 <li> <b>MaxApplesInPath</b>.java         : Find maximum apples that can be collected in a path in a 2d matrix from top left corner to bottom right corner of matrix</li>
 <li> <b>LRU</b>.java                     : Find the pages in the window of LRU scheduling policy. Prints only final results.</li>
+<li> <b>SJF</b>.java                     : Find the schedule using the Shortest Job First scheduling policy.</li>
 </ol>
