@@ -7,4 +7,5 @@ Practicing Algorithms.
 <li> <b>MaxApplesInPath</b>.java         : Find maximum apples that can be collected in a path in a 2d matrix from top left corner to bottom right corner of matrix</li>
 <li> <b>LRU</b>.java                     : Find the pages in the window of LRU scheduling policy. Prints only final results.</li>
 <li> <b>SJFTester</b>.java                     : Find the schedule using the Shortest Job First scheduling policy.</li>
+<li> <b>RRTester</b>.java                 : Find the schedule using round robin policy.</li>
 </ol>
