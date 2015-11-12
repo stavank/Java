@@ -10,56 +10,7 @@
 //       /\    /\
 //      5 13  25 40 
 //
-public class TreeNode{
-  int data;
-  TreeNode left;
-  TreeNode right;
-  TreeNode parent;
-  public TreeNode(int val){
-    this.data = val;
-  }
-  // assign children and parent to a node
-  public void assignChildrenAndParent(TreeNode leftNode, TreeNode rightNode){
-    this.left = leftNode;
-    this.right = rightNode;
-    this.parentOf(leftNode,rightNode);
-  }
-  // say who is the parentof the children
-  public void parentOf(TreeNode leftNode, TreeNode rightNode){
-    leftNode.parent = this;
-    rightNode.parent = this;
-  }
-  // function to find next highest node
-  public TreeNode findNextHighest(TreeNode root){
-    // for cases that have no right child
-    // i.e. the next highest element is a parent such that this node is on its left sub tree
-    if(this.right == null){
-      return this.findBiggerParent(root);
-    }
-    // if right sub tree exists, then rsult is the left most element at the bottom of the sub tree
-    else{
-      return this.right.findSmallestInTree();
-    }
-  }
-  // find next highest parent such that this node is on its left sub tree
-  public TreeNode findBiggerParent(TreeNode root){
-	  TreeNode temp = this;
-	  while(temp.parent != null){
-		  if (temp.parent.left == temp){
-			  return temp.parent;  
-		  }
-		  temp = temp.parent;
-	  }
-	  return new TreeNode(-1);
-  }
-  // get smallest element in the sub tree
-  public TreeNode findSmallestInTree(){
-    TreeNode temp = this;
-    while(temp.left != null){
-      temp = temp.left;
-    }
-    return temp;
-  }
+public class Tester{
   public static void main(String[] args){
     // construct the BST
     TreeNode node1 = new TreeNode(20);
@@ -87,4 +38,56 @@ public class TreeNode{
     result = node6.findNextHighest(node1);
     System.out.println("testing node "+node6.data+" next highest "+result.data);
   }
+}
+class TreeNode{
+	  int data;
+	  TreeNode left;
+	  TreeNode right;
+	  TreeNode parent;
+	  public TreeNode(int val){
+	    this.data = val;
+	  }
+	  // assign children and parent to a node
+	  public void assignChildrenAndParent(TreeNode leftNode, TreeNode rightNode){
+	    this.left = leftNode;
+	    this.right = rightNode;
+	    this.parentOf(leftNode,rightNode);
+	  }
+	  // say who is the parentof the children
+	  public void parentOf(TreeNode leftNode, TreeNode rightNode){
+	    leftNode.parent = this;
+	    rightNode.parent = this;
+	  }
+	  // function to find next highest node
+	  public TreeNode findNextHighest(TreeNode root){
+	    // for cases that have no right child
+	    // i.e. the next highest element is a parent such that this node is on its left sub tree
+	    if(this.right == null){
+	      return this.findBiggerParent(root);
+	    }
+	    // if right sub tree exists, then rsult is the left most element at the bottom of the sub tree
+	    else{
+	      return this.right.findSmallestInTree();
+	    }
+	  }
+	  // find next highest parent such that this node is on its left sub tree
+	  public TreeNode findBiggerParent(TreeNode root){
+		  TreeNode temp = this;
+		  while(temp.parent != null){
+			  if (temp.parent.left == temp){
+				  return temp.parent;  
+			  }
+			  temp = temp.parent;
+		  }
+		  return new TreeNode(-1);
+	  }
+	  // get smallest element in the sub tree
+	  public TreeNode findSmallestInTree(){
+	    TreeNode temp = this;
+	    while(temp.left != null){
+	      temp = temp.left;
+	    }
+	    return temp;
+	  }
+
 }
