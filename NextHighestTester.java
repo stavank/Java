@@ -10,7 +10,7 @@
 //       /\    /\
 //      5 13  25 40 
 //
-public class Tester{
+public class NextHighestTester{
   public static void main(String[] args){
     // construct the BST
     TreeNode node1 = new TreeNode(20);
