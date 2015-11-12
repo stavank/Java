@@ -8,4 +8,5 @@ Practicing Algorithms.
 <li> <b>LRU</b>.java                     : Find the pages in the window of LRU scheduling policy. Prints only final results.</li>
 <li> <b>SJFTester</b>.java                     : Find the schedule using the Shortest Job First scheduling policy.</li>
 <li> <b>RRTester</b>.java                 : Find the schedule using round robin policy.</li>
+<li> <b>RecursiveReverseTester</b>.java   : Reveerse a singly linked list using recursion.</li>
 </ol>
